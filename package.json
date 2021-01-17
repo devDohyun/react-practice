@@ -1,0 +1,31 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "Just react practice",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devDohyun/react-practice.git"
+  },
+  "author": "Dohyun Ahn",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "web-vitals": "^1.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
