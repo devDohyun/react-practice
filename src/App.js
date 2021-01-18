@@ -1,30 +1,18 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Item from './Practice/Item'
-
+import Nav from './components/Nav'
+import { Home } from './pages'
 
 const App = () => {
-    const items = [
-        {
-            title: '첫번째'
-        },
-        {
-            title: '두번째'
-        },
-        {
-            title: '세번째'
-        },
-    ]
-    
     return (
         <div id="app">
-            <div>My React Practice</div>
-            <div className="item-wrapper">
-                {items.map(x => (<Item
-                    key={x.title}
-                    title={x.title}
-                />))}
-            </div>
+            <BrowserRouter>
+                <Nav />
+                <Switch>
+                    <Route path="/" component={Home} exact />
+                </Switch>
+            </BrowserRouter>
         </div>
     )
 }
