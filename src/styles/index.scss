@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+// variables
+@import './variables.scss';
+
+// components
+.page-container {
+    padding-top: 50px;
+}
