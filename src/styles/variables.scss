@@ -1,2 +1,12 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+
+$font_family_default: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
+'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
 $color_primary: rgb(97, 218, 251);
 $color_secondary: rgb(40, 44, 52);
+
+$navigation_height: 65px;
