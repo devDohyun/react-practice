@@ -1,4 +1,7 @@
-nav {
+@import '../../styles/index.scss';
+
+
+#nav {
     position: fixed;
     left: 0;
     top: 0;
@@ -7,5 +10,37 @@ nav {
     
     width: 100%;
 
-    // background-color: $color_secondary;
+    background-color: $color_primary;
+
+    color: $color_secondary;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 95%;
+        height: $navigation_height;
+        max-width: 1000px;
+        
+        margin: 0 auto;
+
+        .logo {
+            text-decoration: none;
+            color: $color_secondary;
+            font-weight: bold;
+
+            font-size: 24px;
+        }
+        nav {
+            a {
+                color: $color_secondary;
+                text-decoration: none;
+
+                &:not(:last-of-type) {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }
