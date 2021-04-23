@@ -6,10 +6,8 @@ import { useSelector } from 'react-redux'
 const TodoContainer = () => {
     const items = useSelector(state => state.todo.items)
 
-    console.log(items);
     
-    
-    return <TodoList />
+    return <TodoList items={items} />
 }
 
 
