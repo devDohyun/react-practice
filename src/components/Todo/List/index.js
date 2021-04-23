@@ -1,10 +1,13 @@
-import Item from '@/components/Todo/Item'
+import Item from 'components/Todo/Item'
 
 
 const TodoList = props => {
+    const items = props.items || []
+    
+    
     return (
         <div>
-            {props.items.map(x => (
+            {items.map(x => (
                 <Item
                     title={x.title}
                     content={x.content}

@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Nav from 'components/Nav'
 import { Home, TodoList } from './pages'
 
+
 const App = () => {
     return (
         <div id="app">
@@ -19,5 +20,6 @@ const App = () => {
         </div>
     )
 }
+
 
 export default App

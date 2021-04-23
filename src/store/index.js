@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers, createStore } from 'redux'
 import todo from './todo'
 
 
@@ -7,4 +7,7 @@ const rootReducer = combineReducers({
 })
 
 
-export default rootReducer
+const store = createStore(rootReducer)
+
+console.log(store);
+export default store

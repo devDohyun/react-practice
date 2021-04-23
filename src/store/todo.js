@@ -7,7 +7,7 @@ export const removeTodoItem = () => ({ type: TYPE_REMOVE_TODO_ITEM })
 
 
 const initialState = {
-    todoList: []
+    items: []
 }
 
 
@@ -16,16 +16,16 @@ const todo = (state = initialState, action) => {
         case TYPE_ADD_TODO_ITEM:
             return {
                 ...state,
-                todoList: todoList.concat(action.item)
+                items: state.items.concat(action.item)
             }
         case TYPE_REMOVE_TODO_ITEM:
-            const todoList = [...state.todoList]
-            todoList.splice(action.idx, 1)
+            const items = [...state.items]
+            items.splice(action.idx, 1)
             
             
             return {
                 ...state,
-                todoList
+                items
             }
         default:
             return state
