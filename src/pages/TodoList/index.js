@@ -1,10 +1,10 @@
-import TodoContainer from 'containers/TodoContainer'
+import TodoListContainer from 'containers/TodoListContainer'
 
 
 function TodoList() {
     return (
         <div className="page-container">
-            <TodoContainer />
+            <TodoListContainer />
         </div>
     )
 }

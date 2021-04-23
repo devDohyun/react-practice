@@ -1,4 +1,5 @@
 import { combineReducers, createStore } from 'redux'
+import { devToolsEnhancer } from 'redux-devtools-extension'
 import todo from './todo'
 
 
@@ -7,7 +8,7 @@ const rootReducer = combineReducers({
 })
 
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer, devToolsEnhancer())
 
-console.log(store);
+
 export default store

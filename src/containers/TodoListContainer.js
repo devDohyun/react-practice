@@ -3,7 +3,7 @@ import TodoList from 'components/Todo/List'
 import { useSelector } from 'react-redux'
 
 
-const TodoContainer = () => {
+const TodoListContainer = () => {
     const items = useSelector(state => state.todo.items)
 
     
@@ -11,4 +11,4 @@ const TodoContainer = () => {
 }
 
 
-export default TodoContainer
+export default TodoListContainer
