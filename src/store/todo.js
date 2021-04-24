@@ -2,7 +2,7 @@ const TYPE_ADD_TODO_ITEM = 'ADD_TODO_ITEM'
 const TYPE_REMOVE_TODO_ITEM = 'REMOVE_TODO_ITEM'
 
 
-export const addTodoItem = () => ({ type: TYPE_ADD_TODO_ITEM })
+export const addTodoItem = (item) => ({ type: TYPE_ADD_TODO_ITEM, item })
 export const removeTodoItem = () => ({ type: TYPE_REMOVE_TODO_ITEM })
 
 
