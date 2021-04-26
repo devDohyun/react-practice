@@ -28,9 +28,15 @@ const Form = props => {
 
     return (
         <form onSubmit={onSubmit}>
-            <input type="text" onInput={e => onInput(e, 'title')} value={formContent.title} />
-            <textarea onInput={e => onInput(e, 'content')} value={formContent.content}></textarea>
-            <button type="submit">추가</button>
+            <div>
+                <input type="text" onInput={e => onInput(e, 'title')} value={formContent.title} />
+            </div>
+            <div>
+                <textarea onInput={e => onInput(e, 'content')} value={formContent.content}></textarea>
+            </div>
+            <div>
+                <button type="submit">추가</button>
+            </div>
         </form>
     )
 }
