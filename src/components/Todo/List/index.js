@@ -7,8 +7,9 @@ const TodoList = props => {
     
     return (
         <div>
-            {items.map(x => (
+            {items.map((x, index) => (
                 <Item
+                    key={`${x.title}-${index}`}
                     title={x.title}
                     content={x.content}
                 ></Item>
