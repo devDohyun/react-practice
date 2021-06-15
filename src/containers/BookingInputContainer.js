@@ -1,11 +1,27 @@
-import BookingForm from 'components/Booking/Form'
+import { useState } from 'react'
+import BookingReservation from '../components/Booking/Reservation'
 
 const BookingInputContainer = () => {
+  const [stateForm, setStateForm] = useState({
+    name: null,
+  })
   const handleOnChange = (e) => {
-    console.log(e)
+    const { name, value } = e.target
+
+    setStateForm((state) => ({
+      ...state,
+      [name]: value,
+    }))
   }
 
-  return <BookingForm onChange={handleOnChange} />
+  return (
+    <>
+      <BookingReservation
+        stateForm={stateForm}
+        handleOnChange={handleOnChange}
+      />
+    </>
+  )
 }
 
 export default BookingInputContainer

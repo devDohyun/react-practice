@@ -1,7 +1,11 @@
-const BookingForm = ({ onChange }) => {
+import style from './Form.module.scss'
+
+const BookingForm = ({ state, onChange }) => {
+  const { name } = state
+
   return (
-    <form>
-      <input type="text" onChange={onChange} />
+    <form className={style.form}>
+      <input type="text" name="name" onChange={onChange} />
     </form>
   )
 }
