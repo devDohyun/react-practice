@@ -5,7 +5,7 @@ const BookingForm = ({ state, onChange }) => {
 
   return (
     <form className={style.form}>
-      <input type="text" name="name" onChange={onChange} />
+      <input type="text" name="name" value={name} onChange={onChange} />
     </form>
   )
 }
